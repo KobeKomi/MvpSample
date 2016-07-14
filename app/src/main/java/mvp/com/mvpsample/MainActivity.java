@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mvpModel = new MvpModel();
+
         mNameTv = (TextView) findViewById(R.id.tv_name);
         mStartBtn = (Button) findViewById(R.id.btn_start);
         mLoadPb = (ProgressBar) findViewById(R.id.pb_load_progress);
@@ -51,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         public LoaderAsyncTask() {
             super();
-            mvpModel = new MvpModel();
         }
 
         @Override

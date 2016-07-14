@@ -39,7 +39,6 @@ public class MvpXPresenter extends Presenter<MvpXPresenter.IMvpXUi>{
 
         public LoaderAsyncTask() {
             super();
-            mvpModel = new MvpModel();
         }
 
         @Override

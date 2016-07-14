@@ -32,7 +32,6 @@ public class MvpPresenter {
 
         public LoaderAsyncTask() {
             super();
-            mvpModel = new MvpModel();
         }
 
         @Override
